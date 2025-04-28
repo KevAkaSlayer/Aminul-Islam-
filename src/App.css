@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+/* Optional: if you have Playfair Display or any elegant serif in your Tailwind config, you can swap in here */
+/* Otherwise this uses your default `font-serif` stack */
+html,
+body {
+  @apply antialiased font-serif;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Toggle checkbox styles */
+.toggle-checkbox {
+  right: 0;
+  z-index: 5;
+  transition: all 0.3s;
+}
+
+.toggle-checkbox:checked {
+  right: 4px;
+  transform: translateX(100%);
+}
+
+.toggle-label {
+  transition: background-color 0.3s;
+}
+
+/* Ensure Lottie animations display correctly */
+.lottie-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Education section styles: grey timeline instead of purple */
+.education-timeline::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: theme("colors.gray.500");
+}
+
+.education-timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: theme("colors.gray.500");
+}
+
+/* Card hover effects */
+.experience-card,
+.achievement-card,
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.experience-card:hover,
+.achievement-card:hover,
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Project card image hover effects */
+.project-card-image {
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-card-image {
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+/* Email icon clip path */
+.clip-path-message {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+
+/* Scroll reveal animation */
+.reveal {
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Enhance section transitions */
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(128, 128, 128, 0.2), transparent);
+}
+
+/* Enhance typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.025em;
+}
+
+/* Enhance buttons */
+button,
+a.button {
+  transition: all 0.3s ease;
+}
+
+button:hover,
+a.button:hover {
+  transform: translateY(-2px);
+}
+
+button:active,
+a.button:active {
+  transform: translateY(0);
+}
