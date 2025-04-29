@@ -1,5 +1,8 @@
 import { Trophy, Award, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
+import codeforces from "../assets/codeforces-Photoroom.jpg";
+import icpc from "../assets/icpc-Photoroom.jpg";
+import web from "../assets/web-Photoroom.jpg";
 
 const containerVariants = {
   hidden: {},
@@ -15,28 +18,28 @@ const Achievements = ({ darkMode }) => {
   const achievements = [
     {
       title: "ICPC Regionalist Dhaka 2024",
-      image: "/placeholder.svg?height=120&width=120",
+      image: icpc,
       description:
         "Participated in the prestigious ACM ICPC Dhaka Regional 2024, competing against top university teams.",
       buttons: [{ label: "Certificate", url: "#" }],
     },
     {
       title: "ICPC Regionalist Dhaka 2023",
-      image: "/placeholder.svg?height=120&width=120",
+      image: icpc,
       description:
         "Qualified for and competed in ICPC Dhaka Regional 2023, showcasing strong algorithmic skills.",
       buttons: [{ label: "Certificate", url: "#" }],
     },
     {
       title: "Competitive Programming",
-      image: "/placeholder.svg?height=120&width=120",
+      image: codeforces,
       description:
         "Solved 500+ problems on various online judges, demonstrating advanced problem-solving abilities.",
       buttons: [{ label: "Codeforces", url: "#" }],
     },
     {
       title: "Web Development Projects",
-      image: "/placeholder.svg?height=120&width=120",
+      image: web,
       description:
         "Developed and deployed multiple web applications like Food Fanatic and Wellness Oasis, showcasing full-stack skills.",
       buttons: [{ label: "Projects", url: "#projects" }],

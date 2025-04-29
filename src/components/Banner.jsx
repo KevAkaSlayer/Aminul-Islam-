@@ -4,13 +4,12 @@ import bannerLottie from "../assets/banner.json";
 
 const Banner = ({ darkMode }) => {
   const socialLinks = [
-    { icon: <Code size={20} />, href: "#", label: "Code" },
-    { icon: <Linkedin size={20} />, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: <Github size={20} />, href: "https://github.com", label: "GitHub" },
+    { icon: <Code size={20} />, href: "https://codeforces.com/profile/AMIN_AL_ISLAM", label: "Code" },
+    { icon: <Linkedin size={20} />, href: "https://www.linkedin.com/in/aminul-islam-a278b1217/", label: "LinkedIn" },
+    { icon: <Github size={20} />, href: "https://github.com/KevAkaSlayer", label: "GitHub" },
     { icon: <Mail size={20} />, href: "mailto:aminalislam4223@gmail.com", label: "Email" },
-    { icon: <Facebook size={20} />, href: "#", label: "Facebook" },
-    { icon: <Instagram size={20} />, href: "#", label: "Instagram" },
-    { icon: <Twitter size={20} />, href: "#", label: "Twitter" },
+    { icon: <Facebook size={20} />, href: "https://www.facebook.com/amin.dx.9/", label: "Facebook" },
+    { icon: <Twitter size={20} />, href: "https://x.com/AminulIsla94920", label: "Twitter" },
   ];
 
   return (
@@ -34,6 +33,7 @@ const Banner = ({ darkMode }) => {
               <a
                 key={idx}
                 href={link.href}
+                target="_blank"
                 aria-label={link.label}
                 className={`p-3 rounded-full transition-colors ${
                   darkMode

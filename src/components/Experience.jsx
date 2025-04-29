@@ -1,5 +1,8 @@
 import { Calendar, MapPin, Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
+import octopusx from "../assets/octopusXPhotoroom.jpg";
+import interspeed from "../assets/interspeed-Photoroom.jpg";
+import genex from "../assets/genex-Photoroom.jpg";
 
 const containerVariants = {
   hidden: {},
@@ -16,7 +19,7 @@ const Experience = ({ darkMode }) => {
     {
       title: "Project Manager",
       company: "OctopusX",
-      logo: "/placeholder.svg?height=80&width=80",
+      logo: octopusx,
       type: "Full-time",
       duration: "Feb 2025 - Apr 2025",
       location: "Chattogram, Bangladesh",
@@ -27,7 +30,7 @@ const Experience = ({ darkMode }) => {
     {
       title: "Brand Representative",
       company: "Interspeed",
-      logo: "/placeholder.svg?height=80&width=80",
+      logo: interspeed,
       type: "Part-time",
       duration: "Jul 2018 - Jul 2019",
       location: "Chattogram, Bangladesh",
@@ -38,7 +41,7 @@ const Experience = ({ darkMode }) => {
     {
       title: "Customer Service Agent",
       company: "Genex Infosys Ltd.",
-      logo: "/placeholder.svg?height=80&width=80",
+      logo: genex,
       type: "Part-time",
       duration: "Feb 2017 - May 2018",
       location: "Chattogram, Bangladesh",
@@ -86,7 +89,7 @@ const Experience = ({ darkMode }) => {
               {/* Logo overlapping, pushed further down */}
               <div className="absolute top-22 left-1/2 transform -translate-x-1/2">
                 <div className={`w-20 h-20 rounded-full ${darkMode ? "bg-gray-800" : "bg-white"} flex items-center justify-center border-4 border-white overflow-hidden`}>  
-                  <img src={exp.logo} alt={exp.company} className="w-12 h-12" />
+                  <img src={exp.logo} alt={exp.company} className="w-12 h-12 rounded-full" />
                 </div>
               </div>
 

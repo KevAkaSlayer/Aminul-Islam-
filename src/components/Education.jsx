@@ -1,6 +1,6 @@
 import { GraduationCap, Calendar, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
-
+import uctc from "../assets/uctclogo-Photoroom.jpg"
 const containerVariants = {
   hidden: {},
   visible: {
@@ -22,8 +22,8 @@ const Education = ({ darkMode }) => {
       degree: "BSc in Computer Science",
       duration: "2022 - Present",
       location: "Chattogram, Bangladesh",
-      gpa: "Current CGPA 3.71",
-      logo: "/placeholder.svg?height=80&width=80",
+      gpa: "Current CGPA 3.58",
+      logo: uctc,
       courses: [
         "Data Structures & Algorithms",
         "Object Oriented Programming",
@@ -68,7 +68,7 @@ const Education = ({ darkMode }) => {
                 <div className="flex items-start gap-6">
                   <div className="flex-shrink-0">
                     <div className="w-20 h-20 rounded-full overflow-hidden bg-gray-700 flex items-center justify-center">
-                      <img src={edu.logo} alt={edu.institution} className="w-16 h-16" />
+                      <img src={edu.logo} alt={edu.institution} className="w-16 h-16 rounded-full" />
                     </div>
                   </div>
                   <div className="flex-grow">
