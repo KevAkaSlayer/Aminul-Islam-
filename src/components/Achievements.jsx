@@ -21,7 +21,7 @@ const Achievements = ({ darkMode }) => {
       image: icpc,
       description:
         "Participated in the prestigious ACM ICPC Dhaka Regional 2024, competing against top university teams.",
-      buttons: [{ label: "Certificate", url: "#" }],
+      buttons: [{ label: "Certificate", url: "https://drive.google.com/file/d/1QDUGb5FCtHqliq1kBhtgjfnmJ7i3EElJ/view?usp=sharing" }],
     },
     {
       title: "ICPC Regionalist Dhaka 2023",
@@ -35,7 +35,7 @@ const Achievements = ({ darkMode }) => {
       image: codeforces,
       description:
         "Solved 500+ problems on various online judges, demonstrating advanced problem-solving abilities.",
-      buttons: [{ label: "Codeforces", url: "#" }],
+      buttons: [{ label: "Codeforces", url: "https://codeforces.com/profile/AMIN_AL_ISLAM" }],
     },
     {
       title: "Web Development Projects",
@@ -47,7 +47,7 @@ const Achievements = ({ darkMode }) => {
   ];
 
   const additional = [
-    { label: "Current CGPA 3.71", text: "Consistently maintaining academic excellence in CS program" },
+    { label: "Current CGPA 3.58", text: "Consistently maintaining academic excellence in CS program" },
     { label: "Web Dev Course", text: "Completed comprehensive web development training" },
     { label: "CSE Fundamentals", text: "Strengthened CS foundations through Phitron training" },
   ];
